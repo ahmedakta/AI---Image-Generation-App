@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:wght@300&display=swap');
+
+*{
+    font-family:"Exo 2", sans-serif;
+}
+
+
+html{
+    background: url(https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+.container{
+    color: white;
+    z-index: 999;
+    position: relative;
+    max-width: 700px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.container .content{
+    background: rgba(0, 0, 0 ,0.44);
+    margin-top: 25%;
+    border-radius:10px;
+    padding: 1rem;
+    box-shadow: 0 4px 30px rgba(0 , 0 , 0 , 0.1);
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border : 1px solid rgba(0 , 0 , 0 , 0.1);
+}
+.container .content p{
+    margin: 1rem;
+}
+.container #photo-gen-form{
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+    max-width: 100%;
+}
+.container #photo-gen-form button{
+    width: 5rem;
+    color: white;
+    border: 0;
+    border-radius: 10%;
+    margin-left:0.1rem ;
+    background:  linear-gradient(
+        145deg,
+        hsl(289deg 100% 21%) 11%,
+        hsl(55deg 100% 50%) 100%)
+}
+.container #photo-gen-form button:disabled{
+    opacity: 0.5;
+}
+.container #photo-gen-form input{
+    color: black;
+    height: 2rem;
+    padding: 0.3rem;
+    border-radius: 0.6rem;
+    flex-grow:2;
+    border: 1px solid gray;
+    background-color: white;
+    width: 100%;
+    max-width: 100%;
+}
+.container #photo-gen-form input:focus{
+    outline: none;
+}
+.container h4{
+    color: white;
+    margin: 1rem;
+    font-size: 3vh;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container .result{
+    max-width: 650px;
+}
+.container .result #result-grid img{
+    width: 350px;
+    height: 350px;
+    border-radius: 10%;
+}
+.result #loader{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
+.container .result #result-grid{
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#surprise-me{
+    color: rgb(0, 255, 191);
+}
